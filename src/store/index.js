@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import someFeatureReducer from "./someFeature/reducer";
+import feedReducer from "./feed/slice";
 
 const store = configureStore({
   reducer: {
-    // something: someFeatureReducer
-    // ...
+    feed: feedReducer,
   },
 });
+
 export default store;
